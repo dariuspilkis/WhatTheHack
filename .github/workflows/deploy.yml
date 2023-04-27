@@ -25,4 +25,4 @@ jobs:
         scope: subscription
         region: northeurope
         template: ./Bicep-Templates/main.bicep
-        parameters: webAppName=jeq1247darius-${{ env.targetEnv }
+        parameters: webAppName=jeq1247darius-${{ env.targetEnv }}
