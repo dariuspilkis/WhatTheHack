@@ -1,9 +1,6 @@
 on:
   workflow_dispatch
 
-env:
-  targetEnv: Dev
-
 name: Azure Bicep Deploy
 jobs:
   build-and-deploy:
@@ -23,6 +20,5 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         scope: subscription
-        region: westeurope
+        region: northeurope
         template: ./Bicep-Templates/main.bicep
-        parameters: webAppName=wthapp-${{ env.targetEnv }}

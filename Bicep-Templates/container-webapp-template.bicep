@@ -1,5 +1,5 @@
 param location string = 'northeurope'
-param prefix string = 'duck'
+param prefix string = 'jeq1247'
 
 param webAppName string = '${prefix}devops-dev'
 param hostingPlanName string = '${prefix}devops-asp'
